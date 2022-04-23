@@ -9,7 +9,7 @@ The test set might have a turtles that train set doesn't have, in that case the 
 Top 5 mean average precision (mAP)
 
 # Train
-- We have divided the dataset into 5 folds. In order to be able to recognize 'new turtle', we included the extra images as the "new turtle" class. 
+- We have divided the dataset into 5 folds. We included the extra images that did not belong to the 100 turtles as the "new turtle" class. 
 - Since the 'new turtle' class caused class imbalance, we used WeightedRandomSampler
 - For augmentations, we have used [albumentation](https://albumentations.ai/). 
 ```python
